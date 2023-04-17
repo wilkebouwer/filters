@@ -11,9 +11,10 @@ Removes annoyances in Discord web, like the endless prompts for you to get Nitro
 
 Removes annoyances in Dutch webshops, like advertisements concealed as actual listings, shiny discounts and recommended products. Gives a cleaner interface.
 
-Supported webshops so far are:
-	* AliExpress
-	* Marktplaats (alternative for [Marktplaats zonder spam](https://addons.mozilla.org/en-US/firefox/addon/marktplaats-zonder-spam/))
-	* Bol.com
-	* Coolblue
-	* Amazon
+**Supported webshops so far are:**
+
+- AliExpress
+- Marktplaats (alternative for [Marktplaats zonder spam](https://addons.mozilla.org/en-US/firefox/addon/marktplaats-zonder-spam/))
+- Bol.com
+- Coolblue
+- Amazon
