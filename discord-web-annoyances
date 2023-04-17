@@ -1,0 +1,77 @@
+!!! Discord
+
+! General
+!
+! Remove shiny nitro button
+discord.com##[class^="shinyButton"]
+! Remove upsell elements
+discord.com##[class*="upsell"]
+! Remove "Buy level" server tier buttons
+discord.com##button:has-text("Buy Level")
+! Remove Nitro-only theme editor
+discord.com##[class*="themeEditor"]
+
+! Server channel
+!
+! Remove gifts button
+discord.com##[aria-label="Send a gift"]
+! Remove nitro options in "Start an Activity" menu
+discord.com##[class^="scrollSection"] + div
+! Remove emoji nitro prompt
+discord.com##[class^="premiumPromo"]
+! Disallow clicking on nitro sticker
+discord.com##[class*="stickerUnsendable"]:upward(3):style(pointer-events: none !important)
+! Remove "Get the desktop app!" prompt
+discord.com##[class^="notice"]
+! Remove "Did you know" channel notice
+discord.com##[class^="channelNotice"]
+! Remove dismissable buttons
+discord.com##button:has-text("Dismiss"):upward(4)
+! Live stream screen
+discord.com##[class*="lockBackground"]:upward(1)
+! Remove "Unlock fancy emojis with Nitro"
+discord.com###fancybutton-toggle:upward(1)
+! Remove super reactions that require Nitro
+discord.com##[aria-label*="Add Super Reaction"]
+
+! Server settings
+!
+! Remove server boost status buy Nitro card
+discord.com###guild_premium-tab > [class^="divider"]
+discord.com###guild_premium-tab > [class^="wrapper"]
+discord.com###guild_premium-tab > [class^="tier0Container"]
+
+! DM page
+!
+! Remove "This section could be better" message
+discord.com##[class^="scroller"] > [class^="card"]
+! Remove store button
+discord.com##[aria-label="Direct Messages"] > :has-text("Nitro")
+! Remove Nitro promotion card
+discord.com##[class*="contentPremium"]
+
+! Personal settings
+!
+! Remove payment settings block
+discord.com##[class^="header"]:has-text(/Payment Settings/)
+discord.com##[class^="header"]:has-text(/Payment Settings/) + div
+discord.com##[class^="header"]:has-text(/Payment Settings/) + div + div
+discord.com##[class^="header"]:has-text(/Payment Settings/) + div + div + div
+discord.com##[class^="header"]:has-text(/Payment Settings/) + div + div + div + div
+discord.com##[class^="header"]:has-text(/Payment Settings/) + div + div + div + div + div
+discord.com##[class^="header"]:has-text(/Payment Settings/) + div + div + div + div + div + div
+! Remove limited Nitro avatar decoration in user profiles settings
+discord.com##[class^="limitedFeatureBorder"]:upward(1)
+! Remove Nitro tryout in user profiles settings
+discord.com##[class^="premiumFeatureBorder"]
+! Remove Nitro button in server profiles settings
+discord.com##[class^="upsellContainer"]
+! Remove disabled forms in server profiles settings which need Nitro to change
+discord.com##[class^="customizationSection"][class*="disabled"]
+
+! Sidebar
+!
+! Remove "Download Apps" button
+discord.com##[aria-label="Download Apps"]:upward(5)
+! Remove separator between servers and "Download Apps" button
+discord.com##[class^="guildSeparator"]:upward(1)
