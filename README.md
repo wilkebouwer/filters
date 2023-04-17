@@ -5,4 +5,8 @@ Filters for adblockers like uBlock Origin
 
 ### [Discord Web Annoyances](https://raw.githubusercontent.com/wilkebouwer/filters/main/discord-web-annoyances)
 
-Removes annoyances in Discord web, like the endless prompts for you to get Nitro, features which require Nitro which only serve as lures to spend money and the spam of popups and messages about irrelevant things.
+Removes annoyances in Discord web, like the endless prompts for you to get Nitro, features which require Nitro which only serve as lures to spend money and the spam of popups and messages about irrelevant things. Currently only works with Discord in English.
+
+### [NL Webshop Annoyances](https://raw.githubusercontent.com/wilkebouwer/filters/main/nl-webshop-annoyances)
+
+Removes annoyances in Dutch webshops, like advertisements concealed as actual listings, shiny discounts and recommended products.

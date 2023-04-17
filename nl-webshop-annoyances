@@ -1,0 +1,140 @@
+[Adblock Plus 2.0]
+! Version: 202304170759
+! Title: NL Webshop Annoyances
+! Last modified: 2023-04-17 07:59 UTC
+! Expires: 2 days (update frequency)
+! Homepage: https://github.com/wilkebouwer/filters
+
+!!! AliExpress
+
+! General
+!
+! Remove popups like new user discounts and register
+aliexpress.com##[style^="position: fixed"]
+! Remove sidebar gift icon
+aliexpress.com##.sidebar-tab-gift
+
+! Search
+!
+! Remove warning that ads can affect search ordering
+aliexpress.com##.sort-result-content
+aliexpress.com##.sort--sortTip--Kz_q-sU
+! Remove advertisement listings
+aliexpress.com##.product-container > div > a > :has-text(/Advertentie/):upward(1)
+aliexpress.com##.manhattan--container--1lP57Ag > div > :has-text(/Advertentie/):upward(2)
+! Remove selling points
+aliexpress.com##._1hJHa
+aliexpress.com##.tag--sellingPointStyle--2KdWdTF
+aliexpress.com##.vcAi3:has-text(/Beperkt aanbod|korting/)
+! Remove original price before discount and change new price color to black
+aliexpress.com##._3QAcC
+aliexpress.com##.manhattan--price-original--3QAcCkG
+aliexpress.com##._1CCSZ > span:style(color: unset !important)
+aliexpress.com##.manhattan--price-sale--1CCSZfK > span:style(color: unset !important)
+! Remove premium related products
+aliexpress.com###p4p
+
+! Product page
+!
+! Remove current discount indicator
+aliexpress.com##.product-price-original
+! Remove coin discounts
+aliexpress.com##.product-selling-tags
+! Make discount banner look like normal price
+aliexpress.com##.uniform-banner-slogan
+aliexpress.com##.uniform-banner-box-discounts
+aliexpress.com##.uniform-banner:style(background-image: unset !important; background-color: unset !important)
+aliexpress.com##.uniform-banner-box:style(background-image: unset !important; padding: unset !important; min-height: unset !important)
+aliexpress.com##.uniform-banner-box-price:style(color: unset ! important; font-size: 24px !important; font-weight: 700 !important)
+! Remove coupon receival link
+aliexpress.com##.product-coupon
+! Remove extra information about discount
+aliexpress.com##.product-eu-law
+! Remove product recommendations at the bottom
+aliexpress.com##.bottom-recommendation
+
+!!! Marktplaats
+!
+! Remove "De volgorde van de resultaten wordt mede bepaald door betaalde opvalmogelijkheden." message
+www.marktplaats.nl##.ndfc-wrapper
+! Remove sponsored content
+www.marktplaats.nl##.mp-Listing:has-text(/Dagtopper|Topadvertentie|Bezoek website|Naar website|Ook van deze adverteerder/)
+www.marktplaats.nl##.hz-Listing:has-text(/Dagtopper|Topadvertentie|Bezoek website|Naar website|Ook van deze adverteerder/)
+! Remove blank listings
+www.marktplaats.nl###banner-rubrieks-dt:upward(1)
+www.marktplaats.nl##.hz-Banner--inline-gv
+www.marktplaats.nl##.hz-Listings__container--casGallery
+! Remove "Advertenties door Marktplaats Pro"
+www.marktplaats.nl##.hz-Listings__container--cas
+! Remove "Advertenties gerelateerd aan ..."
+www.marktplaats.nl###adsense-container
+! Remove "Goed bezig wereldverbeteraar!" messages
+www.marktplaats.nl###sustainability-visibility-tracker
+
+!!! Bol.com
+
+! Search page
+!
+! Remove sponsored content
+www.bol.com##.js_sponsored_product
+! Remove original discount prices
+www.bol.com##.ab-discount
+! Remove "prijstip" sections
+www.bol.com##.price-block__promo
+! Remove discount price highlight
+www.bol.com##+js(rc, is--price-off-discount, div, stay)
+! Remove promotion labels
+www.bol.com##.product-item__promo-labels
+
+! Product page
+!
+! Remove "Bekijk ook eens" listings
+www.bol.com##.slot--sponsored-products
+! Remove discount text under extra listings
+www.bol.com##.promo-text
+! Remove highlighted discount prices
+www.bol.com##+js(rc, product-prices__bol-promo-price)
+www.bol.com##.product-prices__currency:style(color: #d30000 !important)
+! Remove "Meestal n" price text
+www.bol.com##.product-prices__list-price
+! Remove "Let op, bijna uitverkocht!" messages
+www.bol.com##.buy-block__highlight--scarce
+! Remove "Je bespaart" text under multiple product options
+www.bol.com##.multibundle__discount
+
+!!! Coolblue
+
+! Search page
+!
+! Remove label on top of product image
+www.coolblue.nl##.product-label
+! Remove "Onze keuze voor een..." etc. text under product image
+www.coolblue.nl##.dynamic-highlight__value
+www.coolblue.nl##.dynamic-highlight__separator
+! Remove original price from discounts
+www.coolblue.nl##.sales-price__former
+
+! Product page
+!
+! Remove labels on top of product image
+www.coolblue.nl##.product-page--labels
+! Remove extra information about label
+www.coolblue.nl##.hide\@sm-down.section--4\@sm
+! Remove free stuff enticers
+www.coolblue.nl##strong:has-text(/Gratis/):upward(4)
+! Remove discount indicator in recommended section
+www.coolblue.nl##.js-configurator-discount-element
+www.coolblue.nl##.configurator__sales-price--list
+
+!!! Amazon
+!
+! Remove "Amazon's choice" entries
+www.amazon.com##.s-shopping-adviser
+www.amazon.com##.a-text-normal:has-text(/MORE RESULTS/)
+www.amazon.com##.sg-col-inner:upward(1) + .s-widget-spacing-large > .sg-col-inner:upward(1)
+! Remove "Amazon's" choice badges
+www.amazon.com##[data-component-type="s-status-badge-component"]
+! Remove "Save $x.xx with coupon"
+www.amazon.com##[data-component-type="s-coupon-component"]
+! Remove "Frequently bought together"
+www.amazon.com##[id^="CardInstance"]
