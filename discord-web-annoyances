@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202305070714
+! Version: 202305190502
 ! Title: Wilke's Filters - Discord Web Annoyances
-! Last modified: 2023-05-07 07:14 UTC
+! Last modified: 2023-05-19 05:02 UTC
 ! Expires: 2 days (update frequency)
 ! Homepage: https://github.com/wilkebouwer/filters
 
@@ -51,7 +51,9 @@ discord.com###guild_premium-tab > [class^="tier0Container"]
 ! Remove "This section could be better" message
 discord.com##[class^="scroller"] > [class^="card"]
 ! Remove store button
-discord.com##[aria-label="Direct Messages"] > :has-text("Nitro")
+discord.com##a[href*="/store"]
+! Remove Discord's birthday button
+discord.com##a[href*="/activities"]
 ! Remove Nitro promotion card
 discord.com##[class*="contentPremium"]
 ! Remove popup card at the bottom
@@ -69,6 +71,8 @@ discord.com##[class^="header"]:has-text(/Payment Settings/) + div + div + div + 
 discord.com##[class^="header"]:has-text(/Payment Settings/) + div + div + div + div + div + div
 ! Remove limited Nitro avatar decoration in user profiles settings
 discord.com##[class^="limitedFeatureBorder"]:upward(1)
+! Remove limited Discord's birthday avatar decoration in user profiles settings
+discord.com##[class^="birthdayFeatureBorder"]:upward(1)
 ! Remove Nitro tryout in user profiles settings
 discord.com##[class^="premiumFeatureBorder"]
 ! Remove Nitro button in server profiles settings
